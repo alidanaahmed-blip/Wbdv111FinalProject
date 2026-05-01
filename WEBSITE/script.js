@@ -142,6 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
   wireGenerator();
   wireBagButtons();
   wireContactButtons();
+  wireSaveButtons();
   wireAuthModal();
 });
 
@@ -194,6 +195,15 @@ function wireContactButtons() {
   });
 }
 
+function wireSaveButtons() {
+  document.querySelectorAll("[data-save-message]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const message = button.getAttribute("data-save-message") || "Saved!";
+      alert(message);
+    });
+  });
+}
+
 function wireAuthModal() {
   const modal = document.querySelector("#auth-modal");
   const openButtons = document.querySelectorAll("[data-open-auth]");
@@ -205,6 +215,7 @@ function wireAuthModal() {
   const tabButtons = document.querySelectorAll("[data-auth-tab]");
   const loginForm = document.querySelector("#login-form");
   const signupForm = document.querySelector("#signup-form");
+  const roleQuickButtons = document.querySelectorAll("[data-role-quick]");
 
   if (!modal || !checkbox || !continueButton || !termsStep || !formStep || !loginForm || !signupForm) return;
 
@@ -236,12 +247,29 @@ function wireAuthModal() {
     });
   });
 
+  roleQuickButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const role = button.getAttribute("data-role-quick") || "user";
+      modal.querySelectorAll("[data-role-select]").forEach((select) => {
+        select.value = role;
+      });
+      roleQuickButtons.forEach((item) => {
+        item.classList.toggle("nav-active", item === button);
+      });
+    });
+  });
+
   [loginForm, signupForm].forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const action = form.id === "login-form" ? "Logged in" : "Account created";
+      const roleSelect = form.querySelector("[data-role-select]");
+      const role = roleSelect?.value || "user";
+      const destination = getRoleDestination(role);
+
       alert(`${action}! Terms were accepted before access.`);
       closeAuthModal(modal);
+      window.location.href = destination;
     });
   });
 
@@ -264,8 +292,18 @@ function wireAuthModal() {
     continueButton.disabled = true;
     formStep.classList.remove("auth-step-active");
     termsStep.classList.add("auth-step-active");
+    roleQuickButtons.forEach((button) => button.classList.remove("nav-active"));
+    modal.querySelectorAll("[data-role-select]").forEach((select) => {
+      select.value = "user";
+    });
     switchAuthTab("login", tabButtons, loginForm, signupForm);
   }
+}
+
+function getRoleDestination(role) {
+  if (role === "admin") return "admin.html";
+  if (role === "super-admin") return "super-admin.html";
+  return "dashboard.html";
 }
 
 function switchAuthTab(mode, tabButtons, loginForm, signupForm) {

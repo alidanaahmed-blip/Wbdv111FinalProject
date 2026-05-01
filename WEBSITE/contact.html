@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="index.html"><span class="brand-star">★</span> Whimsleek</a>
+      <nav class="nav-links" aria-label="General navigation">
+        <a href="index.html">Home</a>
+        <a href="outfit-generator.html">Outfit Generator</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-button" type="button" data-open-auth="login">Log In</button>
+        <button class="primary-button" type="button" data-open-auth="signup">Sign Up</button>
+      </div>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="contact-grid">
+      <article class="contact-card">
+        <p class="section-label">Contact Us</p>
+        <h2>Send a message to the Whimsleek team.</h2>
+        <p>Ask about sizing, styling ideas, technical issues, or anything related to your user, admin, or super admin experience.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Your name" aria-label="Your name">
+          <input type="email" placeholder="Your email" aria-label="Your email">
+          <textarea rows="4" placeholder="Tell us how we can help..." aria-label="Your message"></textarea>
+          <button class="primary-button" type="button" data-contact-send>Send Message</button>
+        </form>
+      </article>
+      <article class="panel-card">
+        <p class="section-label">Contact Details</p>
+        <h2>Whimsleek Studio</h2>
+        <p>Email: hello@whimsleek.com</p>
+        <p>Phone: +1 (555) 276-2244</p>
+        <p>Hours: Mon-Sat, 10am - 7pm</p>
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80" alt="Friendly fashion team portrait">
+      </article>
+    </section>
+  </main>
+  <div class="auth-modal" id="auth-modal" hidden><div class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="auth-title"><button class="close-button" type="button" id="close-auth" aria-label="Close dialog">x</button><div class="auth-step auth-step-active" id="terms-step"><p class="section-label">Privacy First</p><h2 id="auth-title">Terms of Agreement</h2><p>Before logging in or signing up, please confirm that you agree to Whimsleek&apos;s privacy-minded use of account details, saved preferences, and shopping activity.</p><div class="terms-box"><p>You agree that Whimsleek may store account information, saved outfit picks, bag activity, and contact details to personalize your experience and protect your account.</p><p>You confirm that you are submitting your own details and understand that your information is used for access, order support, and curated recommendations.</p></div><label class="checkbox-row"><input type="checkbox" id="agree-terms"><span>I have read and agree to the Terms of Agreement and privacy notice.</span></label><button class="primary-button" type="button" id="continue-auth" disabled>Continue</button></div><div class="auth-step" id="form-step"><div class="auth-tabs"><button class="tab-button tab-active" type="button" data-auth-tab="login">Log In</button><button class="tab-button" type="button" data-auth-tab="signup">Sign Up</button></div><div class="portal-links"><a class="ghost-button" href="dashboard.html">User</a><a class="ghost-button" href="admin.html">Admin</a><a class="ghost-button" href="super-admin.html">Super Admin</a></div><form class="auth-form auth-form-active" id="login-form"><label>Email<input type="email" placeholder="you@whimsleek.com"></label><label>Password<input type="password" placeholder="Enter password"></label><label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label><button class="primary-button" type="submit">Log In</button></form><form class="auth-form" id="signup-form"><label>Display name<input type="text" placeholder="Whimsy Star"></label><label>Email<input type="email" placeholder="you@whimsleek.com"></label><label>Password<input type="password" placeholder="Create password"></label><label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label><button class="primary-button" type="submit">Create Account</button></form></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -11,6 +11,14 @@
   --radius-xl: 34px;
   --radius-lg: 24px;
   --radius-pill: 999px;
+  --font-size-body: 1rem;
+  --font-size-nav: 1rem;
+  --font-size-brand: 1.45rem;
+  --font-size-display: clamp(4rem, 10vw, 8.8rem);
+  --font-size-script: clamp(2rem, 4vw, 4rem);
+  --font-size-page-title: clamp(3rem, 7vw, 5.6rem);
+  --font-size-card-title: clamp(2rem, 3.2vw, 3rem);
+  --font-size-card-heading: 2rem;
 }
 
 * {
@@ -26,6 +34,7 @@ body {
   min-height: 100vh;
   color: var(--berry);
   font-family: "Nunito", "Segoe UI", sans-serif;
+  font-size: var(--font-size-body);
   background:
     radial-gradient(circle at 48% 12%, rgba(255, 255, 255, 0.95), transparent 18%),
     radial-gradient(circle at 18% 20%, rgba(255, 214, 229, 0.7), transparent 24%),
@@ -111,7 +120,7 @@ button {
   gap: 10px;
   white-space: nowrap;
   font-family: "Playfair Display", serif;
-  font-size: 1.45rem;
+  font-size: var(--font-size-brand);
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -148,6 +157,7 @@ button {
 .role-links a {
   padding: 8px 10px;
   border-radius: var(--radius-pill);
+  font-size: var(--font-size-nav);
   color: rgba(61, 24, 48, 0.76);
   transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
 }
@@ -247,7 +257,7 @@ button {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(4.8rem, 10vw, 8.8rem);
+  font-size: var(--font-size-display);
   line-height: 0.84;
   letter-spacing: -0.06em;
 }
@@ -259,7 +269,7 @@ button {
 .hero-script {
   margin: 10px 0 0;
   font-family: "Pacifico", cursive;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: var(--font-size-script);
   line-height: 1.1;
 }
 
@@ -381,7 +391,7 @@ button {
 .auth-panel h2,
 .dashboard-card h2 {
   margin: 0 0 10px;
-  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-size: var(--font-size-card-title);
   line-height: 0.96;
 }
 
@@ -430,7 +440,7 @@ textarea:focus {
 .timeline-card h3 {
   margin: 0 0 12px;
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: var(--font-size-card-heading);
 }
 
 .result-list {
@@ -522,6 +532,25 @@ textarea:focus {
   background: rgba(255, 244, 248, 0.98);
 }
 
+.auth-intro {
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 229, 239, 0.78));
+  border: 1px solid rgba(61, 24, 48, 0.1);
+}
+
+.auth-intro strong {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+}
+
+.auth-intro p {
+  margin: 0;
+}
+
 .close-button {
   position: absolute;
   top: 16px;
@@ -540,8 +569,7 @@ textarea:focus {
   display: none;
 }
 
-.auth-step-active,
-.auth-form-active {
+.auth-step-active {
   display: grid;
 }
 
@@ -584,6 +612,14 @@ textarea:focus {
   margin-top: 18px;
 }
 
+.auth-form.auth-form-active {
+  display: grid;
+}
+
+.auth-submit {
+  margin-top: 6px;
+}
+
 .page-hero {
   display: grid;
   gap: 20px;
@@ -599,8 +635,21 @@ textarea:focus {
 .page-hero h1 {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 7vw, 5.6rem);
+  font-size: var(--font-size-page-title);
   line-height: 0.9;
+}
+
+.visual-card {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  background: rgba(255, 248, 252, 0.7);
+  box-shadow: var(--shadow);
+}
+
+.visual-card img {
+  height: 320px;
+  object-fit: cover;
 }
 
 .page-hero p {

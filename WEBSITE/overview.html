@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | Overview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="index.html"><span class="brand-star">★</span> Whimsleek</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="concept.html">Concept</a>
+        <a href="theme.html">Theme</a>
+        <a href="audience.html">Audience</a>
+        <a href="process.html">Process</a>
+        <a href="overview.html">Overview</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-button" type="button" data-open-auth="login">Log In</button>
+        <button class="primary-button" type="button" data-open-auth="signup">Sign Up</button>
+      </div>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">Overview</p>
+      <h1>Shop the Whimsleek edit.</h1>
+      <p>This page acts like the storefront overview, combining featured products, styling notes, and quick add-to-bag actions.</p>
+    </section>
+    <div class="section-heading">
+      <div><p class="section-label">Featured Picks</p><h2>Three sweet essentials.</h2></div>
+      <a class="ghost-button" href="contact.html">Need styling help?</a>
+    </div>
+    <section class="product-grid">
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" alt="Pink cardigan outfit"><div class="product-copy"><h3>Pink Cloud Cardigan</h3><p>Soft knit layer with pearl buttons and a sugar-sweet silhouette.</p><div class="product-meta"><strong>$42</strong><button class="mini-button" type="button" data-add-bag>Add to bag</button></div></div></article>
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Pleated mini skirt detail"><div class="product-copy"><h3>Star Pleat Mini</h3><p>A twirl-ready skirt that anchors dreamy campus and brunch outfits.</p><div class="product-meta"><strong>$38</strong><button class="mini-button" type="button" data-add-bag>Add to bag</button></div></div></article>
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Pastel accessories styling"><div class="product-copy"><h3>Heart Charm Set</h3><p>Hair clips, ribbon ties, and glossy add-ons to finish the fantasy.</p><div class="product-meta"><strong>$18</strong><button class="mini-button" type="button" data-add-bag>Add to bag</button></div></div></article>
+    </section>
+    <p class="bag-status" id="bag-status">Shopping bag: 0 items</p>
+    <div class="action-row">
+      <a class="primary-button" href="shop.html">Go To Shop</a>
+      <a class="ghost-button" href="orders.html">Track Orders</a>
+    </div>
+  </main>
+  <div class="auth-modal" id="auth-modal" hidden><div class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="auth-title"><button class="close-button" type="button" id="close-auth" aria-label="Close dialog">x</button><div class="auth-step auth-step-active" id="terms-step"><p class="section-label">Privacy First</p><h2 id="auth-title">Terms of Agreement</h2><p>Before logging in or signing up, please confirm that you agree to Whimsleek's privacy-minded use of account details, saved preferences, and shopping activity.</p><div class="terms-box"><p>You agree that Whimsleek may store account information, saved outfit picks, bag activity, and contact details to personalize your experience and protect your account.</p><p>You confirm that you are submitting your own details and understand that your information is used for access, order support, and curated recommendations.</p></div><label class="checkbox-row"><input type="checkbox" id="agree-terms"><span>I have read and agree to the Terms of Agreement and privacy notice.</span></label><button class="primary-button" type="button" id="continue-auth" disabled>Continue</button></div><div class="auth-step" id="form-step"><div class="auth-tabs"><button class="tab-button tab-active" type="button" data-auth-tab="login">Log In</button><button class="tab-button" type="button" data-auth-tab="signup">Sign Up</button></div><form class="auth-form auth-form-active" id="login-form"><label>Email<input type="email" placeholder="you@whimsleek.com"></label><label>Password<input type="password" placeholder="Enter password"></label><button class="primary-button" type="submit">Log In</button></form><form class="auth-form" id="signup-form"><label>Display name<input type="text" placeholder="Whimsy Star"></label><label>Email<input type="email" placeholder="you@whimsleek.com"></label><label>Password<input type="password" placeholder="Create password"></label><button class="primary-button" type="submit">Create Account</button></form></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>

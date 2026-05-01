@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | User Outfit Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="dashboard.html"><span class="brand-star">★</span> Whimsleek</a>
+      <nav class="nav-links" aria-label="User dashboard navigation">
+        <a href="dashboard.html">Home</a>
+        <a href="user-outfit-generator.html">Outfit Generator</a>
+        <a href="user-shop.html">Shop</a>
+        <a href="orders.html">Orders</a>
+        <a href="profile.html">Profile</a>
+        <a href="user-about.html">About Us</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="generator-layout">
+      <article class="panel-card">
+        <p class="section-label">Outfit Generator</p>
+        <h2>Make a look from your dashboard.</h2>
+        <form class="generator-form" id="generator-form">
+          <label>Style mood<select id="style-mood"><option value="coquette">Coquette Daydream</option><option value="citypop">City Pop Darling</option><option value="ballet">Ballet Starlight</option><option value="retro">Retro Sweetheart</option></select></label>
+          <label>Occasion<select id="occasion"><option value="campus">Campus Hangout</option><option value="brunch">Pink Brunch Date</option><option value="party">After-Sunset Party</option><option value="photoshoot">Mirror Selfie Shoot</option></select></label>
+          <button class="primary-button" type="submit">Generate Outfit</button>
+        </form>
+      </article>
+      <article class="panel-card"><p class="result-tag">Generated look</p><h3 id="look-title">Coquette Daydream for a Campus Hangout</h3><p id="look-description">A blush cardigan, pleated skirt, ribbon socks, and heart-clasp mini bag for a polished but playful daytime look.</p><div class="result-list"><span id="look-top">Top: Pearl-button cardigan</span><span id="look-bottom">Bottom: Rose pleated mini skirt</span><span id="look-shoes">Shoes: Ballet buckle flats</span><span id="look-extra">Extra: Glossy heart bag + star clip set</span></div></article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

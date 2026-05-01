@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | Theme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="index.html"><span class="brand-star">★</span> Whimsleek</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="concept.html">Concept</a>
+        <a href="theme.html">Theme</a>
+        <a href="audience.html">Audience</a>
+        <a href="process.html">Process</a>
+        <a href="overview.html">Overview</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-button" type="button" data-open-auth="login">Log In</button>
+        <button class="primary-button" type="button" data-open-auth="signup">Sign Up</button>
+      </div>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">Theme</p>
+      <h1>Glossy pink with a starry wink.</h1>
+      <p>The theme leans into rosy gradients, romantic serif display type, playful handwritten script, and sparkly accents so the site feels fun, girly, and whimsical.</p>
+    </section>
+    <section class="story-grid">
+      <article class="panel-card">
+        <p class="section-label">Typography</p>
+        <h2>Fun fonts with fashion-editorial drama.</h2>
+        <p>Playfair Display handles the big elegant headings, Pacifico adds that flirty handwritten energy, and Nunito keeps the rest clear and friendly.</p>
+      </article>
+      <article class="panel-card">
+        <p class="section-label">Visual Mood</p>
+        <h2>Soft glow, candy pink, bright cream.</h2>
+        <p>The palette uses blush and bubblegum pinks with creamy panels so the content stays readable while still feeling sugary and cute.</p>
+      </article>
+    </section>
+  </main>
+  <div class="auth-modal" id="auth-modal" hidden><div class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="auth-title"><button class="close-button" type="button" id="close-auth" aria-label="Close dialog">x</button><div class="auth-step auth-step-active" id="terms-step"><p class="section-label">Privacy First</p><h2 id="auth-title">Terms of Agreement</h2><p>Before logging in or signing up, please confirm that you agree to Whimsleek's privacy-minded use of account details, saved preferences, and shopping activity.</p><div class="terms-box"><p>You agree that Whimsleek may store account information, saved outfit picks, bag activity, and contact details to personalize your experience and protect your account.</p><p>You confirm that you are submitting your own details and understand that your information is used for access, order support, and curated recommendations.</p></div><label class="checkbox-row"><input type="checkbox" id="agree-terms"><span>I have read and agree to the Terms of Agreement and privacy notice.</span></label><button class="primary-button" type="button" id="continue-auth" disabled>Continue</button></div><div class="auth-step" id="form-step"><div class="auth-tabs"><button class="tab-button tab-active" type="button" data-auth-tab="login">Log In</button><button class="tab-button" type="button" data-auth-tab="signup">Sign Up</button></div><form class="auth-form auth-form-active" id="login-form"><label>Email<input type="email" placeholder="you@whimsleek.com"></label><label>Password<input type="password" placeholder="Enter password"></label><button class="primary-button" type="submit">Log In</button></form><form class="auth-form" id="signup-form"><label>Display name<input type="text" placeholder="Whimsy Star"></label><label>Email<input type="email" placeholder="you@whimsleek.com"></label><label>Password<input type="password" placeholder="Create password"></label><button class="primary-button" type="submit">Create Account</button></form></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>

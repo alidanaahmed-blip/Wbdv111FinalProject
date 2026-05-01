@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="dashboard.html"><span class="brand-star">★</span> Whimsleek</a>
+      <nav class="nav-links" aria-label="User dashboard navigation">
+        <a href="dashboard.html">Home</a>
+        <a href="user-outfit-generator.html">Outfit Generator</a>
+        <a href="user-shop.html">Shop</a>
+        <a href="orders.html">Orders</a>
+        <a href="profile.html">Profile</a>
+        <a href="user-about.html">About Us</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">Profile</p>
+      <h1>Your Whimsleek profile.</h1>
+      <p>Manage your name, style preferences, and saved mood settings.</p>
+    </section>
+    <article class="panel-card">
+      <form class="dashboard-form">
+        <label>Display name<input type="text" value="Whimsy Star"></label>
+        <label>Email<input type="email" value="you@whimsleek.com"></label>
+        <label>Favorite style<select><option>Coquette</option><option>Ballet Starlight</option><option>City Pop Darling</option></select></label>
+        <label>Bio<textarea rows="4">Pink-lover, outfit collector, and Whimsleek moodboard hoarder.</textarea></label>
+        <button class="primary-button" type="button" data-save-message="Profile saved successfully!">Save Profile</button>
+      </form>
+    </article>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

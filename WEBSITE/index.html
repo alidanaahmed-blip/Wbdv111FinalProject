@@ -34,6 +34,11 @@
         <h1>WHIMSLEEK <span>★</span></h1>
         <p class="hero-script">outfit generator & playful fashion shop</p>
         <p class="hero-text">Whimsleek is a cute, glossy, star-filled style site where users can make outfits, browse fashion picks, and jump into the right portal for user, admin, or super admin access.</p>
+        <p class="hero-text">Start as a visitor, explore the brand, and then use the role-aware login or sign-up flow to enter the user, admin, or super admin side with the correct experience.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#generator-section">Try Outfit Generator</a>
+          <a class="ghost-button" href="#shop-section">Shop The Drop</a>
+        </div>
       </div>
       <div class="hero-feature">
         <div class="hero-burst"></div>
@@ -42,6 +47,145 @@
           <strong>Coquette sparkle, ballet bows, glossy pink charm</strong>
         </div>
       </div>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <p class="section-label">Welcome</p>
+        <h2>More than a boutique.</h2>
+        <p>Whimsleek combines fashion inspiration, an outfit-building tool, and a role-based portal system so the site feels playful for visitors and practical for staff.</p>
+      </article>
+      <article class="visual-card">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80" alt="Fashion friends styled in playful outfits">
+      </article>
+    </section>
+
+    <section class="metric-grid">
+      <article class="metric-card">
+        <h3>Curated Looks</h3>
+        <strong>120+</strong>
+        <p>Style ideas designed around coquette, balletcore, retro sweetness, and glossy city-pop moods.</p>
+      </article>
+      <article class="metric-card">
+        <h3>Featured Pieces</h3>
+        <strong>48</strong>
+        <p>New shop arrivals and essentials selected to match the generator results across seasons.</p>
+      </article>
+      <article class="metric-card">
+        <h3>Member Portals</h3>
+        <strong>3</strong>
+        <p>User, admin, and super admin access flows built for browsing, management, and reporting.</p>
+      </article>
+    </section>
+
+    <section class="generator-layout" id="generator-section">
+      <article class="panel-card">
+        <p class="section-label">Outfit Generator</p>
+        <h2>Create a dreamy look right here.</h2>
+        <p>Choose a mood and an occasion, then generate a complete Whimsleek outfit suggestion with hero pieces, styling notes, and finishing accessories.</p>
+        <form class="generator-form" id="generator-form">
+          <label>Style mood
+            <select id="style-mood" name="styleMood">
+              <option value="coquette">Coquette Daydream</option>
+              <option value="citypop">City Pop Darling</option>
+              <option value="ballet">Ballet Starlight</option>
+              <option value="retro">Retro Sweetheart</option>
+            </select>
+          </label>
+          <label>Occasion
+            <select id="occasion" name="occasion">
+              <option value="campus">Campus Hangout</option>
+              <option value="brunch">Pink Brunch Date</option>
+              <option value="party">After-Sunset Party</option>
+              <option value="photoshoot">Mirror Selfie Shoot</option>
+            </select>
+          </label>
+          <button class="primary-button" type="submit">Generate Outfit</button>
+        </form>
+      </article>
+      <article class="panel-card">
+        <p class="result-tag">Generated look</p>
+        <h3 id="look-title">Coquette Daydream for a Campus Hangout</h3>
+        <p id="look-description">A blush cardigan, pleated skirt, ribbon socks, and heart-clasp mini bag for a polished but playful daytime look.</p>
+        <div class="result-list">
+          <span id="look-top">Top: Pearl-button cardigan</span>
+          <span id="look-bottom">Bottom: Rose pleated mini skirt</span>
+          <span id="look-shoes">Shoes: Ballet buckle flats</span>
+          <span id="look-extra">Extra: Glossy heart bag + star clip set</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="feature-grid">
+      <article class="visual-card">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80" alt="Editorial fashion portrait with dreamy styling">
+      </article>
+      <article class="feature-card">
+        <p class="section-label">Why It Feels Real</p>
+        <h2>Editorial visuals with practical flows.</h2>
+        <p>Whimsleek is designed like a true fashion platform: discover a mood, generate a styled fit, browse related products, and continue into your account space when you are ready to save, manage, or report.</p>
+      </article>
+    </section>
+
+    <section class="page-hero" id="shop-section">
+      <p class="section-label">Shop Spotlight</p>
+      <h1>Shop the Whimsleek favorites.</h1>
+      <p>These highlighted pieces are meant to feel immediately shoppable from the home page so the experience behaves more like a real fashion storefront.</p>
+    </section>
+
+    <section class="product-grid">
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80" alt="Pink cardigan outfit">
+        <div class="product-copy">
+          <h3>Pink Cloud Cardigan</h3>
+          <p>Soft knit texture, pearl buttons, and a polished silhouette that works with skirts, dresses, and layered lace tops.</p>
+          <div class="product-meta">
+            <strong>$42</strong>
+            <button class="mini-button" type="button" data-add-bag>Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80" alt="Pleated mini skirt detail">
+        <div class="product-copy">
+          <h3>Star Pleat Mini</h3>
+          <p>A twirl-ready mini skirt that anchors soft campus styling, brunch looks, and polished photo-day outfits.</p>
+          <div class="product-meta">
+            <strong>$38</strong>
+            <button class="mini-button" type="button" data-add-bag>Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Pastel accessories styling">
+        <div class="product-copy">
+          <h3>Heart Charm Set</h3>
+          <p>Glossy clips, ribbons, and finishing accessories designed to add sparkle and personality to every Whimsleek fit.</p>
+          <div class="product-meta">
+            <strong>$18</strong>
+            <button class="mini-button" type="button" data-add-bag>Add to bag</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <p class="bag-status" id="bag-status">Shopping bag: 0 items</p>
+
+    <section class="contact-grid">
+      <article class="feature-card">
+        <p class="section-label">Brand Story</p>
+        <h2>Built for fashion lovers who want fun and clarity.</h2>
+        <p>Instead of feeling cluttered or overly technical, Whimsleek keeps the experience friendly and expressive. The copy is playful, the visuals are editorial, and the flows are simple enough to feel polished for a real launch.</p>
+      </article>
+      <article class="feature-card">
+        <p class="section-label">Need More?</p>
+        <h2>Explore, shop, or sign in.</h2>
+        <p>You can continue into the full shop, learn more about the brand, or log in to the right role if you need orders, management, analytics, or reporting tools.</p>
+        <div class="action-row">
+          <a class="primary-button" href="shop.html">Open Full Shop</a>
+          <a class="ghost-button" href="contact.html">Contact The Team</a>
+        </div>
+      </article>
     </section>
   </main>
 
@@ -63,25 +207,33 @@
         <button class="primary-button" type="button" id="continue-auth" disabled>Continue</button>
       </div>
       <div class="auth-step" id="form-step">
+        <p class="section-label">Account Access</p>
+        <h2>Enter the right Whimsleek portal.</h2>
+        <div class="auth-intro">
+          <strong>Choose how you want to continue</strong>
+          <p>Log in if you already have an account or sign up if you are new. Pick your role so Whimsleek can send you to the correct dashboard for shopping, management, or system oversight.</p>
+        </div>
         <div class="auth-tabs">
           <button class="tab-button tab-active" type="button" data-auth-tab="login">Log In</button>
           <button class="tab-button" type="button" data-auth-tab="signup">Sign Up</button>
         </div>
         <div class="portal-links">
-          <a class="ghost-button" href="dashboard.html">User</a>
-          <a class="ghost-button" href="admin.html">Admin</a>
-          <a class="ghost-button" href="super-admin.html">Super Admin</a>
+          <button class="ghost-button" type="button" data-role-quick="user">User</button>
+          <button class="ghost-button" type="button" data-role-quick="admin">Admin</button>
+          <button class="ghost-button" type="button" data-role-quick="super-admin">Super Admin</button>
         </div>
         <form class="auth-form auth-form-active" id="login-form">
           <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
           <label>Password<input type="password" placeholder="Enter password"></label>
-          <button class="primary-button" type="submit">Log In</button>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Log In</button>
         </form>
         <form class="auth-form" id="signup-form">
           <label>Display name<input type="text" placeholder="Whimsy Star"></label>
           <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
           <label>Password<input type="password" placeholder="Create password"></label>
-          <button class="primary-button" type="submit">Create Account</button>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Create Account</button>
         </form>
       </div>
     </div>

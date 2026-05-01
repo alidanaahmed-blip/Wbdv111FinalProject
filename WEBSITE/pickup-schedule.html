@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthSync Clinic | Availability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="HealthSync Clinic home">
+          <img src="assets/logo-healthsync.svg" alt="HealthSync Clinic logo">
+          <span>
+            <strong>HealthSync Clinic</strong>
+            <small>Trust-Blue Care Portal</small>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="design.html">Book</a>
+          <a href="orders.html">Staff</a>
+          <a href="about.html">History</a>
+          <a href="pickup-schedule.html">Availability</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn ghost" href="orders.html">Meet Staff</a>
+          <a class="btn primary verified-button" href="design.html#register">Reg <span class="verified-badge">Verified</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">Schedule view</p>
+          <h1>Check doctor availability before you book.</h1>
+          <p class="lead">Availability is shown in a simple weekly format so patients can move faster.</p>
+        </div>
+      </div>
+
+      <section class="card">
+        <div class="availability-head">
+          <div>
+            <h2>Weekly schedule</h2>
+            <p>Morning and afternoon blocks stay the busiest, while evening visits are limited.</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr><th>Day</th><th>Morning</th><th>Afternoon</th><th>Evening</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Monday</td><td>Open</td><td>Open</td><td>Limited</td></tr>
+              <tr><td>Tuesday</td><td>Open</td><td>Limited</td><td>Closed</td></tr>
+              <tr><td>Wednesday</td><td>Open</td><td>Open</td><td>Limited</td></tr>
+              <tr><td>Thursday</td><td>Limited</td><td>Open</td><td>Closed</td></tr>
+              <tr><td>Friday</td><td>Open</td><td>Open</td><td>Open</td></tr>
+              <tr><td>Saturday</td><td>Limited</td><td>Open</td><td>Closed</td></tr>
+              <tr><td>Sunday</td><td>Closed</td><td>Closed</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="availability-grid">
+        <article class="card availability-card"><h3>Fastest booking</h3><p>General consultations usually have the shortest waiting time on Monday and Friday mornings.</p></article>
+        <article class="card availability-card"><h3>Family hours</h3><p>Pediatric and follow-up visits are easiest to find on midweek afternoon slots.</p></article>
+        <article class="card availability-card"><h3>Best for working adults</h3><p>Friday evening blocks are the most flexible, but they fill up quickly.</p></article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>HealthSync Clinic availability</p>
+      <p>Simple schedule visibility for faster bookings.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
