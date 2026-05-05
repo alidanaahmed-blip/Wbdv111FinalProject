@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | Outfit Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Pacifico&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="index.html">
+        <span class="brand-star">&#9733;</span>
+        <span class="brand-copy">
+          <span>Whimsleek</span>
+          <small>style lab in motion</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="General navigation">
+        <a href="index.html">Home</a>
+        <a href="outfit-generator.html">Outfit Generator</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-button" type="button" data-open-auth="login">Log In</button>
+        <button class="primary-button" type="button" data-open-auth="signup">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">Outfit Generator</p>
+      <h1>Create playful looks that still connect to real products.</h1>
+      <p>This page focuses on styling. Users can test moods, compare occasions, review product photos, and add a whole generated outfit to their bag without leaving the experience.</p>
+      <div class="shop-filter">
+        <span class="shop-pill">Generated titles</span>
+        <span class="shop-pill">Live prices</span>
+        <span class="shop-pill">Bag actions</span>
+        <span class="shop-pill">Shop handoff</span>
+      </div>
+    </section>
+
+    <section class="generator-layout">
+      <article class="panel-card">
+        <p class="section-label">Step 1</p>
+        <h2>Choose a style direction and a real-life use case.</h2>
+        <p>Instead of vague inspiration, Whimsleek keeps the generator grounded in actual outfit logic: a top or layer, a bottom, shoes or accessories, and a clear mood statement that feels wearable.</p>
+        <form class="generator-form" id="generator-form">
+          <label>Style direction
+            <select id="style-mood" name="styleMood">
+              <option value="cyber">Solar Pop / Cyber</option>
+              <option value="pastel">Pastel Glow</option>
+              <option value="monochrome">Monochrome Cool</option>
+            </select>
+          </label>
+          <label>Occasion
+            <select id="occasion" name="occasion">
+              <option value="campus">Campus / Casual</option>
+              <option value="nightlife">Night Out</option>
+              <option value="weekend">Weekend Hangout</option>
+            </select>
+          </label>
+          <button class="primary-button" type="submit">Generate New Fit</button>
+        </form>
+        <div class="outfit-summary">
+          <p class="section-label">Generator notes</p>
+          <p class="look-vibe" id="look-vibe">Tangerine gloss, silver flash, and easy movement</p>
+          <div class="result-list">
+            <span id="look-top">Layer: Sunflare Track Jacket</span>
+            <span id="look-bottom">Bottom: Orbit Cargo Pants</span>
+            <span id="look-shoes">Shoes: Chrome Bounce Runners</span>
+            <span id="look-extra">3 shoppable pieces ready now</span>
+          </div>
+          <div class="look-actions">
+            <a class="ghost-button" href="shop.html">Browse Full Shop</a>
+            <button class="mini-button" type="button" data-save-message="Your generated outfit was saved as inspiration.">Save Inspiration</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel-card generator-result">
+        <p class="result-tag">Step 2</p>
+        <h2 id="look-title">Solar Pop Sprint for Campus Days</h2>
+        <p id="look-description">A sporty throwback mix with bright shine, roomy bottoms, and pieces that feel playful instead of costume-like.</p>
+        <div class="bag-bar">
+          <span class="look-price">Total <strong id="look-total">$234</strong></span>
+          <span class="bag-status" id="bag-status">Shopping bag: 0 items</span>
+        </div>
+        <div class="look-grid" id="look-products"></div>
+        <div class="look-actions">
+          <button class="primary-button" type="button" id="add-look-button">Add Full Look To Bag</button>
+          <button class="ghost-button" type="button" id="shop-look-button">Shop This Look</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="feature-grid" id="featured-shop">
+      <article class="feature-card">
+        <p class="section-label">Why it works</p>
+        <h2>The styling tool now feels tied to the rest of the website.</h2>
+        <p>Generated products look like real product cards, use real images, show clear prices, and can be added to the shopping bag individually or as a full set. That makes the page stronger than a simple mood board.</p>
+      </article>
+      <article class="visual-card">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80" alt="Glossy fashion editorial look with playful nightlife styling">
+      </article>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <p class="section-label">Good for first-time visitors</p>
+        <h2>The page explains itself clearly.</h2>
+        <p>Visitors can understand what the generator does, what kind of results to expect, and where to go next if they want more product browsing or account features.</p>
+      </article>
+      <article class="feature-card">
+        <p class="section-label">Good for logged-in users too</p>
+        <h2>The same logic carries into the user dashboard version.</h2>
+        <p>Once someone logs in, the user-facing generator keeps the same interaction style, so the public and private experiences feel connected rather than rebuilt from scratch.</p>
+      </article>
+    </section>
+  </main>
+
+  <p class="sr-only" id="bag-live-region" aria-live="polite"></p>
+
+  <div class="auth-modal" id="auth-modal" hidden>
+    <div class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button class="close-button" type="button" id="close-auth" aria-label="Close dialog">x</button>
+      <div class="auth-step" id="form-step">
+        <p class="section-label">Enter Whimsleek</p>
+        <h2 id="auth-title">Log in or create your style account.</h2>
+        <div class="auth-intro">
+          <strong>Continue into the correct portal</strong>
+          <p>After accepting the privacy purpose, users can save outfits, admins can maintain products, and super admins can manage platform content.</p>
+        </div>
+        <div class="auth-tabs">
+          <button class="tab-button tab-active" type="button" data-auth-tab="login">Log In</button>
+          <button class="tab-button" type="button" data-auth-tab="signup">Sign Up</button>
+        </div>
+        <div class="portal-links">
+          <a class="ghost-button" href="dashboard.html">User</a>
+          <a class="ghost-button" href="admin.html">Admin</a>
+          <a class="ghost-button" href="super-admin.html">Super Admin</a>
+        </div>
+        <form class="auth-form auth-form-active" id="login-form">
+          <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
+          <label>Password<input type="password" placeholder="Enter password"></label>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Log In</button>
+        </form>
+        <form class="auth-form" id="signup-form">
+          <label>Display name<input type="text" placeholder="Style Orbit User"></label>
+          <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
+          <label>Password<input type="password" placeholder="Create password"></label>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
