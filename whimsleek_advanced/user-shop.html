@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | User Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Pacifico&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="dashboard.html">
+        <span class="brand-star">&#9733;</span>
+        <span class="brand-copy"><span>Whimsleek</span><small>shopping from your dashboard</small></span>
+      </a>
+      <nav class="nav-links" aria-label="User dashboard navigation">
+        <a href="dashboard.html">Home</a>
+        <a href="user-outfit-generator.html">Outfit Generator</a>
+        <a href="user-shop.html">Shop</a>
+        <a href="orders.html">Orders</a>
+        <a href="profile.html">Profile</a>
+        <a href="user-about.html">About Us</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">User Shop</p>
+      <h1>Shop while staying inside your account area.</h1>
+      <p>This version of the store keeps your user navigation close by, so it feels like part of a real logged-in shopping platform rather than a disconnected public page.</p>
+    </section>
+    <section class="product-grid">
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Pastel cardigan outfit"><div class="product-copy"><h3>Cloud Knit Cardigan</h3><p>Soft knit layer with a cozy finish and easy campus energy.</p><div class="product-meta"><strong>$68</strong><button class="mini-button" type="button" data-add-bag data-item-name="Cloud Knit Cardigan">Add to bag</button></div></div></article>
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Glossy fashion styling"><div class="product-copy"><h3>Vinyl Orbit Mini</h3><p>A glossy statement bottom for nightlife and photo-ready fits.</p><div class="product-meta"><strong>$52</strong><button class="mini-button" type="button" data-add-bag data-item-name="Vinyl Orbit Mini">Add to bag</button></div></div></article>
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80" alt="Pleated skirt fashion detail"><div class="product-copy"><h3>Dream Pleat Skirt</h3><p>Clean pleats with enough movement to soften brighter styling.</p><div class="product-meta"><strong>$44</strong><button class="mini-button" type="button" data-add-bag data-item-name="Dream Pleat Skirt">Add to bag</button></div></div></article>
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="Mini shoulder bag"><div class="product-copy"><h3>Gloss Mini Shoulder Bag</h3><p>Compact bag that finishes dinner, city, and night-out looks nicely.</p><div class="product-meta"><strong>$39</strong><button class="mini-button" type="button" data-add-bag data-item-name="Gloss Mini Shoulder Bag">Add to bag</button></div></div></article>
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=80" alt="Chunky trainers"><div class="product-copy"><h3>Gel Accent Trainers</h3><p>Color-pop trainers that work with both sporty and soft styling directions.</p><div class="product-meta"><strong>$88</strong><button class="mini-button" type="button" data-add-bag data-item-name="Gel Accent Trainers">Add to bag</button></div></div></article>
+      <article class="product-card"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80" alt="Tinted fashion sunglasses"><div class="product-copy"><h3>Tint Pop Shades</h3><p>Fun colored-lens finishing piece for a more playful weekend result.</p><div class="product-meta"><strong>$28</strong><button class="mini-button" type="button" data-add-bag data-item-name="Tint Pop Shades">Add to bag</button></div></div></article>
+    </section>
+    <div class="section-heading">
+      <div><p class="section-label">Your bag</p><h2>Everything you add stays visible here too.</h2></div>
+      <span class="bag-status" id="bag-status">Shopping bag: 0 items</span>
+    </div>
+  </main>
+  <p class="sr-only" id="bag-live-region" aria-live="polite"></p>
+  <script src="script.js"></script>
+</body>
+</html>

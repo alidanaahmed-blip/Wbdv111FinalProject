@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Pacifico&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="index.html">
+        <span class="brand-star">&#9733;</span>
+        <span class="brand-copy">
+          <span>Whimsleek</span>
+          <small>shop the generated vibe</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="General navigation">
+        <a href="index.html">Home</a>
+        <a href="outfit-generator.html">Outfit Generator</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-button" type="button" data-open-auth="login">Log In</button>
+        <button class="primary-button" type="button" data-open-auth="signup">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">Shop</p>
+      <h1>Browse a fuller catalog with more images, more text, and more personality.</h1>
+      <p>Whimsleek is designed to feel fun and warm, but it still needs the structure of a real store. This shop page now features a richer product lineup, better descriptions, and working bag buttons across the full catalog.</p>
+      <div class="shop-filter">
+        <span class="shop-pill">Best sellers</span>
+        <span class="shop-pill">Generator-friendly</span>
+        <span class="shop-pill">Photos on every card</span>
+        <span class="shop-pill">Warm star aesthetic</span>
+      </div>
+    </section>
+
+    <section class="editorial-grid">
+      <article class="feature-card">
+        <p class="section-label">Catalog feel</p>
+        <h2>The store is designed to look complete, not empty.</h2>
+        <p>Each card includes a stronger product name, a fuller description, clear pricing, and an add-to-bag interaction. The tone is still playful, but the shopping flow is easier to trust and easier to use.</p>
+      </article>
+      <article class="visual-card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion editorial styling with layered textures and accessories">
+      </article>
+    </section>
+
+    <div class="section-heading">
+      <div>
+        <p class="section-label">Top Picks</p>
+        <h2>Start with the most versatile pieces in the Whimsleek universe.</h2>
+      </div>
+      <span class="bag-status" id="bag-status">Shopping bag: 0 items</span>
+    </div>
+
+    <section class="product-grid">
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80" alt="Reflective oversized jacket">
+        <div class="product-copy">
+          <h3>Sunflare Track Jacket</h3>
+          <p>Bright oversized outer layer with a glossy finish, roomy shoulders, and easy throw-on appeal.</p>
+          <div class="product-meta">
+            <strong>$78</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Sunflare Track Jacket" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Graphic t-shirt with retro styling">
+        <div class="product-copy">
+          <h3>Arcade Baby Tee</h3>
+          <p>Playful fitted tee with retro energy that works well under jackets, cardigans, or on its own.</p>
+          <div class="product-meta">
+            <strong>$34</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Arcade Baby Tee" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=80" alt="Low-rise denim jeans">
+        <div class="product-copy">
+          <h3>Motion Denim</h3>
+          <p>Relaxed denim with a throwback shape that keeps bright tops and statement shoes feeling balanced.</p>
+          <div class="product-meta">
+            <strong>$58</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Motion Denim" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80" alt="Pleated skirt in light tones">
+        <div class="product-copy">
+          <h3>Dream Pleat Skirt</h3>
+          <p>Twirl-friendly skirt that softens brighter looks and works beautifully for pastel directions.</p>
+          <div class="product-meta">
+            <strong>$44</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Dream Pleat Skirt" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=80" alt="Chunky colorful trainers">
+        <div class="product-copy">
+          <h3>Gel Accent Trainers</h3>
+          <p>Comfortable statement sneakers with candy-colored details and a thicker sole for impact.</p>
+          <div class="product-meta">
+            <strong>$88</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Gel Accent Trainers" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="Mini shoulder handbag">
+        <div class="product-copy">
+          <h3>Gloss Mini Shoulder Bag</h3>
+          <p>Compact glossy bag that adds polish to generated outfits without stealing the spotlight.</p>
+          <div class="product-meta">
+            <strong>$39</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Gloss Mini Shoulder Bag" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=80" alt="Metallic vest in fashion styling">
+        <div class="product-copy">
+          <h3>Metallic Longline Vest</h3>
+          <p>Statement layer with bright structure for nights when you want the outfit to look sharp immediately.</p>
+          <div class="product-meta">
+            <strong>$71</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Metallic Longline Vest" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" alt="Soft pastel cardigan on a model">
+        <div class="product-copy">
+          <h3>Cloud Knit Cardigan</h3>
+          <p>Soft knit cardigan with campus-ready energy and enough texture to anchor simpler separates.</p>
+          <div class="product-meta">
+            <strong>$68</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Cloud Knit Cardigan" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80" alt="Reflective sling bag">
+        <div class="product-copy">
+          <h3>Reflective Sling Bag</h3>
+          <p>Compact crossbody with a high-shine finish that works especially well in monochrome looks.</p>
+          <div class="product-meta">
+            <strong>$36</strong>
+            <button class="mini-button" type="button" data-add-bag data-item-name="Reflective Sling Bag" data-item-qty="1">Add to bag</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <p class="section-label">Styling idea</p>
+        <h2>Mix one statement layer with one grounded piece.</h2>
+        <p>That balance keeps the site aesthetic fun while making the results easier to imagine in real life. It is also the same logic used by the generator, which helps the shop and outfit pages feel consistent.</p>
+      </article>
+      <article class="feature-card">
+        <p class="section-label">Keep going</p>
+        <h2>Want a full styled set instead of shopping item by item?</h2>
+        <p>Move back to the outfit generator if you want Whimsleek to pick the combination for you, then return here when you are ready to browse further.</p>
+        <div class="action-row">
+          <a class="primary-button" href="outfit-generator.html">Generate A Look</a>
+          <a class="ghost-button" href="contact.html">Ask For Styling Help</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <p class="sr-only" id="bag-live-region" aria-live="polite"></p>
+
+  <div class="auth-modal" id="auth-modal" hidden>
+    <div class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button class="close-button" type="button" id="close-auth" aria-label="Close dialog">x</button>
+      <div class="auth-step" id="form-step">
+        <p class="section-label">Enter Whimsleek</p>
+        <h2 id="auth-title">Log in or create your style account.</h2>
+        <div class="auth-intro">
+          <strong>Choose the right role after the privacy agreement step</strong>
+          <p>Use the user area for shopping and saved looks, or continue into the admin and super admin dashboards for platform management.</p>
+        </div>
+        <div class="auth-tabs">
+          <button class="tab-button tab-active" type="button" data-auth-tab="login">Log In</button>
+          <button class="tab-button" type="button" data-auth-tab="signup">Sign Up</button>
+        </div>
+        <div class="portal-links">
+          <a class="ghost-button" href="dashboard.html">User</a>
+          <a class="ghost-button" href="admin.html">Admin</a>
+          <a class="ghost-button" href="super-admin.html">Super Admin</a>
+        </div>
+        <form class="auth-form auth-form-active" id="login-form">
+          <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
+          <label>Password<input type="password" placeholder="Enter password"></label>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Log In</button>
+        </form>
+        <form class="auth-form" id="signup-form">
+          <label>Display name<input type="text" placeholder="Glow Cart Collector"></label>
+          <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
+          <label>Password<input type="password" placeholder="Create password"></label>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
