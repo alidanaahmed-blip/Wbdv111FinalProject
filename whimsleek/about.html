@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | About Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="index.html">
+        <span class="brand-star">&#9733;</span>
+        <span class="brand-copy">
+          <span>Whimsleek</span>
+          <small>fun style without gatekeeping</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="General navigation">
+        <a href="index.html">Home</a>
+        <a href="outfit-generator.html">Outfit Generator</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-button" type="button" data-open-auth="login">Log In</button>
+        <button class="primary-button" type="button" data-open-auth="signup">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">About Whimsleek</p>
+      <h1>A fashion playground that still feels like a real store.</h1>
+      <p>Whimsleek combines a playful outfit generator with a shoppable catalog, so visitors can move from inspiration to product choices without losing context.</p>
+    </section>
+
+    <section class="editorial-grid">
+      <article class="feature-card">
+        <p class="section-label">Our idea</p>
+        <h2>Make styling feel easier, brighter, and more personal.</h2>
+        <p>The site is built for people who like expressive clothes but still want practical guidance. Each generated outfit includes a clear mood, a wearable reason, product photos, prices, and simple next steps.</p>
+        <p>Our color system stays warm and sunny with a matching pink accent for energy, calls to action, badges, and key agreement moments.</p>
+      </article>
+      <article class="visual-card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80" alt="Colorful streetwear outfit with layered fashion pieces">
+      </article>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <p class="section-label">What shoppers can do</p>
+        <h2>Generate, browse, save, and order.</h2>
+        <p>Visitors can test style moods, add full looks to the cart, browse the expanded shop, contact support, and continue into a user dashboard for saved looks, profile details, and order tracking.</p>
+      </article>
+      <article class="feature-card">
+        <p class="section-label">What the platform supports</p>
+        <h2>Storefront, user area, admin area, and super admin tools.</h2>
+        <p>Whimsleek includes management pages for products, orders, users, analytics, reports, system content, and about-page updates. That structure makes the project feel complete instead of like a single static landing page.</p>
+      </article>
+    </section>
+
+    <section class="contact-grid">
+      <article class="visual-card">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80" alt="Fashion retail styling with clothes and accessories">
+      </article>
+      <article class="feature-card">
+        <p class="section-label">Brand promise</p>
+        <h2>Playful design, clear navigation, and honest shopping context.</h2>
+        <p>The site uses bright solid colors, readable sections, product imagery, useful descriptions, and role-based account paths so the experience feels polished and understandable.</p>
+        <div class="action-row">
+          <a class="primary-button" href="outfit-generator.html">Try The Generator</a>
+          <a class="ghost-button" href="shop.html">Browse The Shop</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="auth-modal" id="auth-modal" hidden>
+    <div class="auth-panel" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button class="close-button" type="button" id="close-auth" aria-label="Close dialog">x</button>
+      <div class="auth-step" id="form-step">
+        <p class="section-label">Enter Whimsleek</p>
+        <h2 id="auth-title">Log in or create your style account.</h2>
+        <div class="auth-intro">
+          <strong>Choose the right portal after the privacy agreement</strong>
+          <p>Customers can shop and save outfits, admins can manage products and orders, and super admins can oversee the full platform.</p>
+        </div>
+        <div class="auth-tabs">
+          <button class="tab-button tab-active" type="button" data-auth-tab="login">Log In</button>
+          <button class="tab-button" type="button" data-auth-tab="signup">Sign Up</button>
+        </div>
+        <div class="portal-links">
+          <a class="ghost-button" href="dashboard.html">User</a>
+          <a class="ghost-button" href="admin.html">Admin</a>
+          <a class="ghost-button" href="super-admin.html">Super Admin</a>
+        </div>
+        <form class="auth-form auth-form-active" id="login-form">
+          <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
+          <label>Password<input type="password" placeholder="Enter password"></label>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Log In</button>
+        </form>
+        <form class="auth-form" id="signup-form">
+          <label>Display name<input type="text" placeholder="Style Orbit User"></label>
+          <label>Email<input type="email" placeholder="you@whimsleek.com"></label>
+          <label>Password<input type="password" placeholder="Create password"></label>
+          <label>Role<select data-role-select><option value="user">User</option><option value="admin">Admin</option><option value="super-admin">Super Admin</option></select></label>
+          <button class="primary-button auth-submit" type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

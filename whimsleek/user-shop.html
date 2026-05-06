@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsleek | User Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand-mark" href="dashboard.html">
+        <span class="brand-star">&#9733;</span>
+        <span class="brand-copy"><span>Whimsleek</span><small>shopping from your dashboard</small></span>
+      </a>
+      <nav class="nav-links" aria-label="User dashboard navigation">
+        <a href="dashboard.html">Home</a>
+        <a href="user-outfit-generator.html">Outfit Generator</a>
+        <a href="user-shop.html">Shop</a>
+        <a href="orders.html">Orders</a>
+        <a href="profile.html">Profile</a>
+        <a href="user-about.html">About Us</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="section-label">User Shop</p>
+      <h1>Shop while staying inside your account area.</h1>
+      <p>This version of the store keeps your user navigation close by, so it feels like part of a real logged-in shopping platform rather than a disconnected public page.</p>
+    </section>
+    <section class="product-grid">
+      <article class="product-card">
+        <img src="b.webp" alt="Brown lace flutter-sleeve blouse with a front tie">
+        <div class="product-copy"><h3>Brown Lace Blouse</h3><p>Sheer chocolate lace top with flutter sleeves, a soft front tie, and a delicate evening feel.</p><div class="product-meta"><strong>$46</strong><button class="mini-button" type="button" data-add-cart data-item-name="Brown Lace Blouse" data-item-qty="1">Add to cart</button></div></div>
+      </article>
+      <article class="product-card">
+        <img src="c.webp" alt="Floral midi dress with green bow shoulder straps">
+        <div class="product-copy"><h3>Floral Bow Midi Dress</h3><p>Romantic floral dress with a full skirt, soft sheer texture, and green bow straps.</p><div class="product-meta"><strong>$82</strong><button class="mini-button" type="button" data-add-cart data-item-name="Floral Bow Midi Dress" data-item-qty="1">Add to cart</button></div></div>
+      </article>
+      <article class="product-card">
+        <img src="d.jpg" alt="Lime green satin midi skirt">
+        <div class="product-copy"><h3>Green Satin Midi Skirt</h3><p>Smooth lime satin skirt with a fluid midi length and glossy movement.</p><div class="product-meta"><strong>$58</strong><button class="mini-button" type="button" data-add-cart data-item-name="Green Satin Midi Skirt" data-item-qty="1">Add to cart</button></div></div>
+      </article>
+      <article class="product-card">
+        <img src="f.jpg" alt="Cream woven Mary Jane flats">
+        <div class="product-copy"><h3>Cream Mary Jane Flats</h3><p>Soft cream woven flats with slim straps, a low heel, and a polished everyday shape.</p><div class="product-meta"><strong>$44</strong><button class="mini-button" type="button" data-add-cart data-item-name="Cream Mary Jane Flats" data-item-qty="1">Add to cart</button></div></div>
+      </article>
+      <article class="product-card">
+        <img src="g.jpg" alt="Colorful patterned block heel pumps">
+        <div class="product-copy"><h3>Patterned Block Heel Pumps</h3><p>Colorful printed pumps with pointed toes, ankle straps, and sturdy block heels.</p><div class="product-meta"><strong>$88</strong><button class="mini-button" type="button" data-add-cart data-item-name="Patterned Block Heel Pumps" data-item-qty="1">Add to cart</button></div></div>
+      </article>
+      <article class="product-card">
+        <img src="e.avif" alt="Extra Whimsleek clothing piece">
+        <div class="product-copy"><h3>Whimsy Clothing Pick</h3><p>A saved Whimsleek clothing piece for soft, playful outfit combinations.</p><div class="product-meta"><strong>$68</strong><button class="mini-button" type="button" data-add-cart data-item-name="Whimsy Clothing Pick" data-item-qty="1">Add to cart</button></div></div>
+      </article>
+    </section>
+
+    <div class="section-heading">
+      <div><p class="section-label">Your cart</p><h2>Everything you add stays visible here too.</h2></div>
+      <span class="bag-status" id="bag-status">Shopping cart: 0 items</span>
+    </div>
+  </main>
+  <p class="sr-only" id="bag-live-region" aria-live="polite"></p>
+  <script src="script.js"></script>
+</body>
+</html>
